@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { HomeScreen, BoxScreen } from "./src/screens";
@@ -9,8 +9,15 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Box" component={BoxScreen} />
+        <Stack.Screen
+          name="Home"
+          options={{ headerShown: false }}
+          component={HomeScreen}
+        />
+        <Stack.Screen
+          name="Box"
+          component={BoxScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
