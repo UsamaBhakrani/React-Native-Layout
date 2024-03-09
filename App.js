@@ -1,8 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
-import BoxScreen from "./src/screens/BoxScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import HomeScreen from "./src/screens/HomeScreen";
+import { HomeScreen, BoxScreen } from "./src/screens";
 
 const Stack = createNativeStackNavigator();
 
